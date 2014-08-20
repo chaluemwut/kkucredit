@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Khon kaen university Facebook Creditable",
+  "description": "This extension for research in Creditable facebook of khonkaen university",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+  {
+    "matches": ["https://www.facebook.com/*"],
+    "css": ["kku.css"],
+    "js": ["jquery.js", "kku.js"]
+    }
+  ],
+  "permissions": [
+    "https://www.facebook.com/"
+  ]
+}
