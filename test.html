@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>The jQuery Example</title>
+   <script type="text/javascript" 
+   src="jquery.js"></script>
+   
+   <script type="text/javascript" language="javascript">
+   $(document).ready(function () {
+      $('#newdiv > div').each(function(i){
+        console.log(this);
+      });
+   });
+   </script>
+
+</head>
+<body>
+<div id="newdiv">
+Click on this to see a dialogue box.
+  <div>test1
+    <div>i1
+      <div>i2</div>
+    </div>
+  </div>
+
+  <div>test2</div>
+</div>
+</body>
+</html>
