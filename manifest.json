@@ -12,11 +12,12 @@
   "content_scripts": [
   {
     "matches": ["https://www.facebook.com/*"],
-    "css": ["kku.css"],
-    "js": ["jquery.js", "kku.js"]
+    "css": ["kku.css", "jquery/jquery-ui.css"],
+    "js": ["jquery.js", "kku.js", "jquery/jquery-ui.js"]
     }
   ],
   "permissions": [
-    "https://www.facebook.com/"
+    "https://www.facebook.com/",
+    "https://www.sdc.com/sdc/*"
   ]
 }
