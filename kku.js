@@ -34,7 +34,7 @@ function createProgressBar(ref){
 
 function createCreditDiv(divId){
 	ret = '<div id=kku_'+divId+' style="position: relative; margin-top: 5px; width:100%; height:18px;">';
-	ret += '<div class="inline" style="position: relative; margin-top: 3px;"> KKU credit </div>';
+	ret += '<div class="inline" style="position: relative; margin-top: 3px;">FB Credibility</div>';
 	ret += '<img class="inline" id=img_'+divId+' src="https://dl.dropboxusercontent.com/u/7385478/waiting.gif"  width="20" height="20" alt="Loading"/>';
 	ret += createSourceButton(divId);
 	ret += createAssessmentButton();
@@ -63,7 +63,7 @@ function templateTextContent(color){
 
 function templateDiv(divId, textContent){
 	ret = '<div id=kku_'+divId+' style="position: relative; margin-top: 5px; width:100%; height:18px;">';
-	ret += '<div class="inline" style="position: relative; margin-top: 3px;"> KKU credit </div>';
+	ret += '<div class="inline" style="position: relative; margin-top: 3px;">FB Credibility</div>';
 	ret += textContent;
 	ret += createAssessmentButton();
 	ret += '</div>';
@@ -90,7 +90,7 @@ $(document).ready(function () {
 		console.log('start script update');
 		$("[class*='userContentWrapper']").each(function(i){
 			var sub_stream = $(this);
-			var clearfix = $(sub_stream).find("[class^='clearfix ']");
+			var clearfix = $(sub_stream).find("[class='clearfix _5x46']");
 			var info_source = $(clearfix).find("a");
 			
 			if($(clearfix).find("[id^='kku_']").length){
