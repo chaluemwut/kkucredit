@@ -1,9 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Khon kaen university Facebook Creditable",
-  "description": "This extension for research in Creditable facebook of khonkaen university",
-  "version": "1.0",
+  "name": "FB credibility",
+  "description": "Measurement credibility on facebook",
+  "version": "2.0",
+
+  "background": 
+  {"page":"background.html"
+  },
 
   "browser_action": {
     "default_icon": "icon.png",
@@ -12,12 +16,19 @@
   "content_scripts": [
   {
     "matches": ["https://www.facebook.com/*"],
-    "css": ["kku.css", "jquery/jquery-ui.css"],
-    "js": ["jquery.js", "kku.js", "jquery/jquery-ui.js"]
+    "css": ["kku.css"],
+    "js": ["jquery.js", "kku.js"]
     }
   ],
   "permissions": [
+    "tabs",
+    "storage",
     "https://www.facebook.com/",
-    "https://www.sdc.com/sdc/*"
-  ]
+    "https://www.fbcredibility.com/sdc/*"
+  ],
+  "web_accessible_resources": [
+      "jquery/images/*",
+      "popup.js", 
+      "background.js"
+  ]  
 }

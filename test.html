@@ -7,19 +7,21 @@
   <link href="jquery/jquery-ui.css" rel="stylesheet">
   <script src="jquery.js"></script>
   <script src="jquery/jquery-ui.js"></script>
+  <link href="kku.css" rel="stylesheet"/>
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script>
-  $(function() {
-    $( "#progressbar" ).progressbar({
-      value: 37
-    });
-  });
+  function test(){
+    console.log('test');
+    $('#div_test').attr('class', 'rating1');
+    // obj.text('123');
+    // console.log(obj.text());
+  }
   </script>
 </head>
 <body>
  
-<div id="progressbar"></div>
- 
+<div id='div_test'>7777</div>
+<button onclick="test()">click</button>
  
 </body>
 </html>
